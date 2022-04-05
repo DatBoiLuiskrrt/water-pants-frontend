@@ -19,3 +19,11 @@
   font-size: 1.2rem;
   font-weight: 700;
 }
+.heroplants {
+  height: 80%;
+  width: 50%;
+}
+.heroplants svg {
+  margin-top: 15rem;
+  margin-left: 4em;
+}
