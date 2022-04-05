@@ -2,8 +2,20 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+  border: 1px solid black;
 }
 .background {
   background-color: #a3c4f3;
   height: 100vh;
+}
+.header {
+  display: flex;
+  padding: 2em 4em;
+  justify-content: space-between;
+}
+.header p:first-child {
+  font-size: 1.2rem;
+  font-weight: 700;
 }
