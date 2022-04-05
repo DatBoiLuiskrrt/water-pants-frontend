@@ -4,7 +4,7 @@
   margin: 0;
   font-family: "Poppins", sans-serif;
   color: #fff;
-  border: 1px solid black;
+  /* border: 1px solid black; */
 }
 .background {
   background-color: #a3c4f3;
@@ -33,9 +33,29 @@
   height: 80%;
 }
 .register-wrapper {
-  width: 40%;
+  width: 25%;
   margin: 5em auto;
 }
 input {
   color: black;
+}
+.inputContainer {
+  display: flex;
+  flex-direction: column;
+}
+.buttonContainer {
+  width: 100%;
+}
+button {
+  width: 100%;
+  margin-top: 1em;
+  font-size: 1.1rem;
+  font-weight: 700;
+  background-color: #cfbaf0;
+  padding: 0.5em;
+  border: none;
+  border-radius: 10px;
+}
+button:hover {
+  background-color: #9b6aeb;
 }
