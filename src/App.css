@@ -21,9 +21,21 @@
 }
 .heroplants {
   height: 80%;
-  width: 50%;
+  width: 40%;
 }
 .heroplants svg {
   margin-top: 15rem;
   margin-left: 4em;
+}
+.registerContainer {
+  display: flex;
+  margin: 0 auto;
+  height: 80%;
+}
+.register-wrapper {
+  width: 40%;
+  margin: 5em auto;
+}
+input {
+  color: black;
 }
