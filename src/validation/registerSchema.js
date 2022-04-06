@@ -14,3 +14,5 @@ const SignUpSchema = yup.object().shape({
       }
     ).required,
 });
+
+export default SignUpSchema;
