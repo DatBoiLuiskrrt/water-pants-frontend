@@ -7,12 +7,10 @@ function App() {
   return (
     <div className="background">
       <Header />
-      <Routes>
-        <div className="registerContainer">
-          <Route path="/" element={<Hero />}></Route>
-          <Route path="/" element={<SignUpForm />}></Route>
-        </div>
-      </Routes>
+      <div className="registerContainer">
+        <Hero />
+        <SignUpForm />
+      </div>
     </div>
   );
 }
