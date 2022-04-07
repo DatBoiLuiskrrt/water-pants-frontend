@@ -1,3 +1,4 @@
+import axios from "axios";
 import React, { useState } from "react";
 import * as yup from "yup";
 const initialValues = {
@@ -16,13 +17,33 @@ function Register() {
       [event.target.name]: event.target.value,
     });
   };
+  const onSubmit = (event) => {
+    event.preventDefault();
+    const loginAttempt = {
+      username: formValues.username,
+      password: formValues.password,
+    };
+    postLogin(loginAttempt);
+  };
+  const postLogin = (loginAttempt) => {
+    axios
+      .post(
+        "https://water-my-plants004.herokuapp.com/api/auth/register",
+        loginAttempt
+      )
+      .then((res) => console.log(res))
+      .catch((error) => {
+        console.log(error);
+      });
+  };
+
   return (
     <div className="register-wrapper">
       <h2>
         Get reminded when it’s time to feed that foliage and quench your plant’s
         thirst.
       </h2>
-      <form>
+      <form onSubmit={onSubmit}>
         <div className="inputContainer">
           <div className="inputContainer">
             <label htmlFor="username">Username:</label>
