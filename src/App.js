@@ -10,14 +10,14 @@ function App() {
       <Header />
       <div className="registerContainer">
         <BrowserRouter>
-          <Route path="/login" element={<Login />}>
-            <Login />
-          </Route>
           <Route exact path="/" element={<Hero />}>
             <Hero />
           </Route>
           <Route exact path="/" component={<SignUpForm />}>
             <SignUpForm />
+          </Route>
+          <Route path="/login" render={(props) => <Login />}>
+            <Login />
           </Route>
         </BrowserRouter>
       </div>
