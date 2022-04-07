@@ -1,23 +1,25 @@
 import "./App.css";
-import { Routes, Route, Switch } from "react-router-dom";
+import { Switch, Route, BrowserRouter } from "react-router-dom";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import SignUpForm from "./components/SignUpForm";
+import Login from "./components/Login";
 function App() {
   return (
     <div className="background">
       <Header />
       <div className="registerContainer">
-        <Switch>
-          <Routes>
-            <Route path="/">
-              <Hero />
-            </Route>
-            <Route path="/">
-              <SignUpForm />
-            </Route>
-          </Routes>
-        </Switch>
+        <BrowserRouter>
+          <Route path="/login" element={<Login />}>
+            <Login />
+          </Route>
+          <Route exact path="/" element={<Hero />}>
+            <Hero />
+          </Route>
+          <Route exact path="/" component={<SignUpForm />}>
+            <SignUpForm />
+          </Route>
+        </BrowserRouter>
       </div>
     </div>
   );
