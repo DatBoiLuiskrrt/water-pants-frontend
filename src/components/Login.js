@@ -45,7 +45,7 @@ function Login() {
           </div>
         </div>
         <div className="buttonContainer">
-          <button>Sign up</button>
+          <button>Sign In</button>
         </div>
       </form>
     </div>
