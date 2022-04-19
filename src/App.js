@@ -4,6 +4,7 @@ import Header from "./components/Header";
 import Hero from "./components/Hero";
 import SignUpForm from "./components/SignUpForm";
 import Login from "./components/Login";
+import Plants from "./components/Plants";
 function App() {
   return (
     <div className="background">
@@ -18,6 +19,9 @@ function App() {
           </Route>
           <Route path="/login" render={(props) => <Login />}>
             <Login />
+          </Route>
+          <Route path="/plants" component={<Plants />}>
+            <Plants />
           </Route>
         </BrowserRouter>
       </div>

@@ -22,7 +22,7 @@ function Plants() {
       <form>
         <div className="inputContainer">
           <div className="inputContainer">
-            <label htmlFor="nickname">Username:</label>
+            <label htmlFor="nickname">Nickname:</label>
             <input
               id="nickname"
               name="nickname"
@@ -33,7 +33,7 @@ function Plants() {
             ></input>
           </div>
           <div className="inputContainer">
-            <label htmlFor="species">Password:</label>
+            <label htmlFor="species">Species:</label>
             <input
               id="species"
               name="species"
@@ -44,7 +44,7 @@ function Plants() {
             ></input>
           </div>
           <div className="inputContainer">
-            <label htmlFor="h2oFrequency">Telephone:</label>
+            <label htmlFor="h2oFrequency">Water Frequency:</label>
             <input
               id="h2oFrequency"
               name="h2oFrequency"
